@@ -1,0 +1,9 @@
+<h1>Inactive Users</h1>
+<div *ngFor="let inActiveUser of inActiveUsers; index as id">
+  <div class="d-flex flex-row mb-2">
+    <label class="">{{ inActiveUser }}</label>
+    <button class="btn btn-success ps-3" (click)="setToactive(id)">
+      Switch To Active
+    </button>
+  </div>
+</div>
